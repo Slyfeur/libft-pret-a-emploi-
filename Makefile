@@ -6,7 +6,7 @@
 #    By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 09:45:55 by tuytters          #+#    #+#              #
-#    Updated: 2021/08/11 10:07:52 by tuytters         ###   ########.fr        #
+#    Updated: 2021/08/13 11:08:27 by tuytters         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,10 +83,8 @@ $(NAME)	:	$(OBJS)
 			@ar rc $(NAME) $(OBJS)
 			@ranlib $(NAME)
 
-OUT		=			ft_gnl.o
-MAIN	=			main.c
-test	:			fclean $(NAME)
-					@$(CC) -o $(OUT) $(MAIN) $(NAME)
+%.o: %.c
+			@$(CC) $(CFLAGS) -c $< -o $@
 
 clean	:
 			@$(RM) $(OBJS)
