@@ -6,7 +6,7 @@
 #    By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 09:45:55 by tuytters          #+#    #+#              #
-#    Updated: 2021/08/13 11:08:27 by tuytters         ###   ########.fr        #
+#    Updated: 2021/08/26 09:14:19 by tuytters         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRCS	=	ft_atoi.c		\
 			ft_isdigit.c	\
 			ft_isprint.c	\
 			ft_itoa.c		\
+			ft_itobi.c		\
 			ft_len.c		\
 			ft_memccpy.c	\
 			ft_memchr.c		\

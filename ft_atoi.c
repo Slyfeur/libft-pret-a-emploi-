@@ -6,13 +6,13 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 08:20:31 by tuytters          #+#    #+#             */
-/*   Updated: 2021/05/07 10:48:46 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/20 14:40:40 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+long long	ft_atoi(const char *nptr)
 {
 	int					signe;
 	unsigned long long	valeur;

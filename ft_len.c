@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 10:15:55 by tuytters          #+#    #+#             */
-/*   Updated: 2021/07/08 11:08:59 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/20 10:51:49 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,21 @@ int	ft_strlenhexa(unsigned long long n)
 	}
 	str[i] = '\0';
 	return (ft_strlen(str));
+}
+
+int	ft_binary_len(int n)
+{
+	int	count;
+	int	copy;
+
+	count = 0;
+	if (n == 0)
+		return (1);
+	copy = n;
+	while (copy > 0)
+	{
+		count++;
+		copy /= 2;
+	}
+	return (count);
 }
