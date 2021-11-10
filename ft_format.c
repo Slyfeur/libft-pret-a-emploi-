@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 08:38:39 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/11 09:36:45 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:32:24 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_formatnum(va_list list, t_struct *tab, char *str, int i)
 	if (str[i] == 'X')
 	{
 		tab->format = 3;
-		tab->X = va_arg(list, unsigned int);
+		tab->x_maj = va_arg(list, unsigned int);
 	}
 	if (str[i] == 'p')
 	{

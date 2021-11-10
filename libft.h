@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 09:40:49 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 10:34:36 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:29:31 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ typedef struct s_struct
 	int					tl;
 	long				di;
 	unsigned int		x;
-	unsigned int		X;
+	unsigned int		x_maj;
 	unsigned long long	p;
 	long long			u;
 	char				c;
@@ -107,7 +107,7 @@ void		ft_nbr(t_struct *tab, int n, char str);
 int			ft_printf(const char *format, ...);
 void		ft_putchar_print(t_struct *tab, char c);
 void		ft_puthexa_print(t_struct *tab, unsigned long n);
-void		ft_putheXa_print(t_struct *tab, unsigned long n);
+void		ft_puthexa_maj_print(t_struct *tab, unsigned long n);
 void		ft_puthexapoint_print(t_struct *tab, unsigned long long n);
 void		ft_putnbr_print(t_struct *tab, int n);
 void		ft_putstr_print(t_struct *tab, char *s);

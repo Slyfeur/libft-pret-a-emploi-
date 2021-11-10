@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 08:43:17 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/11 09:35:24 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:28:27 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_puthexa_print(t_struct *tab, unsigned long n)
 	tab->tl += ft_strlenprint(str);
 }
 
-void	ft_putheXa_print(t_struct *tab, unsigned long n)
+void	ft_puthexa_maj_print(t_struct *tab, unsigned long n)
 {
 	int				i;
 	char			str[20];

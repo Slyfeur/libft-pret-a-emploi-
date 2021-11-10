@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 08:37:34 by tuytters          #+#    #+#             */
-/*   Updated: 2021/11/10 15:25:28 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:34:34 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void	ft_baseprint2(t_struct *tab)
 	else if (tab->format == 2)
 		ft_puthexa_print(tab, tab->x);
 	else if (tab->format == 3)
-		ft_putheXa_print(tab, tab->X);
+		ft_puthexa_maj_print(tab, tab->x_maj);
 	else if (tab->format == 8)
 	{
 		write(1, "%", 1);
