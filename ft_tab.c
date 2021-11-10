@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 08:37:34 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/11 09:37:21 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:25:28 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tab(va_list list, t_struct *tab, char *str, int i)
 {
-	while (tab->format == 0 || str[i] == '\0')
+	while (tab->format == 0 || !str[i])
 	{
 		i++;
 		if (!(str[i] == 'd' || str[i] == 'i' || str[i] == 'x'

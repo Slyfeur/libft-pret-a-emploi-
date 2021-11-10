@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 08:19:23 by tuytters          #+#    #+#             */
-/*   Updated: 2021/05/07 08:23:44 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:25:19 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	x = (char *)s1;
 	y = (char *)s2;
 	j = ft_strlen(s2);
-	if (s2[0] == '\0')
+	if (!s2[0])
 		return (x);
 	i = 0;
 	while (s1[i] && i < n)

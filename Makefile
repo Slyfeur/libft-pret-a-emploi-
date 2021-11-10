@@ -6,7 +6,7 @@
 #    By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 09:45:55 by tuytters          #+#    #+#              #
-#    Updated: 2021/08/26 09:14:19 by tuytters         ###   ########.fr        #
+#    Updated: 2021/11/10 15:23:26 by tuytters         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,14 +73,13 @@ RM		=	rm -f
 CFLAGS	=	-Wall -Wextra -Werror
 
 NAME	=	libft.a
-LIB		=	libft.h
 
 CLEAN	=	clean
 
 all	:		$(NAME)
 
 $(NAME)	:	$(OBJS)
-			@$(CC) -c -I$(LIB) $(CFLAGS) $(SRCS)
+			@$(CC) -c $(CFLAGS) $(SRCS)
 			@ar rc $(NAME) $(OBJS)
 			@ranlib $(NAME)
 

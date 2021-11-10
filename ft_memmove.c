@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 14:36:55 by tuytters          #+#    #+#             */
-/*   Updated: 2021/05/07 08:21:38 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:24:54 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 
 	p_dest = (char *)dst;
 	p_src = (const char *)src;
-	if (dst == '\0' && src == '\0')
+	if (!dst && !src)
 		return (0);
 	if (p_src <= p_dest)
 	{
